@@ -1,5 +1,4 @@
-This is actually a Deque.
-This can be used to build a Deck.
+This is actually a FishBowl.
 
 A Deque is an arbitrary deck of buckets, where each card is a bucket.
 Each bucket can hold whatever you want.
