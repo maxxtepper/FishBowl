@@ -1,5 +1,5 @@
-#ifndef DEQUE_SRC_LIB_CARD_H_
-#define DEQUE_SRC_LIB_CARD_H_
+#ifndef FISHBOWL_SRC_LIB_CARD_H_
+#define FISHBOWL_SRC_LIB_CARD_H_
 
 #include <string>
 
@@ -9,6 +9,8 @@ class Card {
 		~Card();
 
 		std::string GetWord() { return word_; };
+
+		bool Activate();
 
 	private:
 		std::string word_;

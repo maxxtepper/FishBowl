@@ -2,3 +2,7 @@
 
 Card::~Card() {
 }
+
+bool Card::Activate() {
+	return true;
+}

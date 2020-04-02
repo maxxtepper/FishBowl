@@ -1,5 +1,5 @@
-#ifndef DEQUE_SRC_LIB_USER_H_
-#define DEQUE_SRC_LIB_USER_H_
+#ifndef FISHBOWL_SRC_LIB_USER_H_
+#define FISHBOWL_SRC_LIB_USER_H_
 //	This is the base class for the players of the game
 //	It should be devoid of the actual game being played
 //	This is the purpose of the card object:
@@ -10,6 +10,8 @@
 //	I am building the user space for any interaction. 
 
 #include <string>
+#include <memory>
+#include "Card.h"
 
 class User {
 	public:
@@ -22,7 +24,14 @@ class User {
 
 		void SetName(std::string &name);
 
+		void EarnCard(std::unique_ptr<Card> card);
+		bool ActivateCard();
+		std::unique_ptr<Card> ReturnCard();
+
 	private:
+		//	A user can hold 1 card
+		std::unique_ptr<Card> card_;
+
 		uint64_t const id_;
 		std::string name_;
 };
