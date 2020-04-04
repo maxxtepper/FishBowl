@@ -1,15 +1,1 @@
-This is actually a FishBowl.
-
-A Deque is an arbitrary deck of buckets, where each card is a bucket.
-Each bucket can hold whatever you want.
-What attributes does the card have?
-//
-Suit
-Value
-Suit and Value are attributes of the card.
-//
-Word
-Word is the only attribute of the card.
-//
-
-A deque object wrapped up is what this is.
+This is the FishBowl back-end.
